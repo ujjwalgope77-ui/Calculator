@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
+
       # 1. Checkout
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -56,7 +57,7 @@ jobs:
             uuid-dev \
             tk-dev
 
-      # 5. Install Rust
+      # 5. Rust
       - name: Install Rust
         run: |
           curl https://sh.rustup.rs -sSf | sh -s -- -y
